@@ -1,0 +1,86 @@
+.header {
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+    font-size: 14px;
+    color: #202124;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-logos {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-gmail {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #5f6368;
+    font-family: 'Product Sans', 'Google Sans', sans-serif;
+    font-size: 22px;
+    line-height: 1;
+}
+.header-logo-gmail:hover {
+    opacity: 0.8;
+}
+
+.header-logo-gmail img {
+    height: 21px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.header-nav {
+    flex-grow: 1;
+}
+
+.header-aside {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-aside a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 100px;
+    transition: all 0.2s;
+    letter-spacing: .0125rem;
+    line-height: 1.5714285714;
+}
+
+.header-aside a:hover {
+    background-color: #f1f3f4;
+}
+
+.header-aside a:last-child {
+    background-color: #1a73e8;
+    color: #fff;
+}
+
+.header-aside a:last-child:hover {
+    background-color: #fff;
+    color: #1a73e8;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
