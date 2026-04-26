@@ -1,0 +1,44 @@
+.gemini-section {
+    padding: 70px 40px;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+.gemini-wrapper {
+    max-width: 800px;
+    width: 100%;
+}
+.gemini-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+.gemini-title {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #202124;
+    letter-spacing: -.03125rem;
+}
+.gemini-description {
+    font-family: Google Sans, Google Sans Text, Roboto, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
+    color: #5f6368;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    max-width: 600px;
+}
+@media (max-width: 768px) {
+    .gemini-section {
+        padding: 60px 20px;
+    }
+    .gemini-title {
+        font-size: 2rem;
+    }
+    .gemini-description {
+        font-size: 1rem;
+    }
+}

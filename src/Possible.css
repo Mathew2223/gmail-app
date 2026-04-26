@@ -1,0 +1,152 @@
+.possible-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.possible-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.possible-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: #202124;
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.possible-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.possible-text-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.possible-item {
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+.possible-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #dadce0;
+    border-radius: 2px;
+    height: 30px;
+    transition: height 0.3s ease-out, background-color 0.3s ease;
+}
+
+.possible-item.open .possible-bar {
+    height: 100%;
+    background-color: #1a73e8;
+}
+
+.possible-item h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #5f6368;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.possible-item h3:hover {
+    color: #3c4043;
+}
+
+.possible-item.open h3 {
+    color: #202124;
+}
+
+.details-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+}
+
+.possible-item.open .details-content {
+    grid-template-rows: 1fr;
+}
+
+.details-content > div {
+    overflow: hidden;
+}
+
+.possible-item p {
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    color: #5f6368;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+}
+
+.possible-item.open p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.possible-images {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.image-card img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.possible-image.animate-on-change {
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .possible-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .possible-images {
+        order: -1;
+    }
+
+    .possible-title {
+        font-size: 2rem;
+        text-align: left;
+    }
+}
