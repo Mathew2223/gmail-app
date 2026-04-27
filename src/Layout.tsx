@@ -1,5 +1,6 @@
 import { Outlet } from "react-router"
 import Header from "./Header"
+import Footer from "./Footer"
 
 export default function Layout() {
     return (
@@ -9,6 +10,8 @@ export default function Layout() {
             <main style={{ paddingTop: '64px', minHeight: 'calc(100vh - 64px)' }}>
                 <Outlet />
             </main>
+
+            <Footer />
         </>
     )
 }
