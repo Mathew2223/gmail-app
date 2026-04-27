@@ -1,5 +1,5 @@
 .gemini-section {
-    padding: 70px 40px;
+    padding: 80px 50px;
     display: grid;
     justify-content: center;
     width: 100%;
@@ -25,11 +25,12 @@
 .gemini-description {
     font-family: Google Sans, Google Sans Text, Roboto, Arial, Noto Sans JP, Noto Sans KR, sans-serif;
     color: #5f6368;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 300;
     margin: 0;
-    max-width: 600px;
+    letter-spacing: 0.04em;
+    word-spacing: 0.05em;
 }
 @media (max-width: 768px) {
     .gemini-section {

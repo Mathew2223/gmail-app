@@ -121,11 +121,14 @@
     padding-top: 10px;
     margin-bottom: 0;
     color: #5f6368;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 1.125rem;
+    line-height: 1.6;
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.3s ease-out;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    word-spacing: 0.05em;
 }
 
 .help-item.open p {

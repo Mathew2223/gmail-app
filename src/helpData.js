@@ -12,6 +12,6 @@ export const helpData = [
     {
         title: "Помните о том, что важно",
         desc: "Ненавязчивые напоминания помогут не упустить письма, требующие ответа.",
-        image: "https://lh3.googleusercontent.com/ZNfku9avhseOyG8BQM4xo-Xrmruq-7jwT212-MiDDhHoDc5ohbGWdFXvvLS5VsZFFzMZPYE7czHtboeNvwvRwdNqEd16W_K56Mav=e365-pa-nu-rw-w684"
+        image: "https://lh3.googleusercontent.com/R5STxzbIpvScTy6zXwFT5KT716R579-24F0ZMHsNccGGOOphFjSrp7PCVhvwjua8-OwBATUy0KymKmYKpmxtvJWxY3H1V2hWkibbtA=e365-pa-nu-rw-w684"
     },
 ]
