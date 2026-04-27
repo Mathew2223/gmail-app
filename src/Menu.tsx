@@ -109,7 +109,7 @@ function RecommendCard() {
 }
 
 import './Packet.css'
-import gmailItems from './assets/gmaiItems.svg'
+import gmailItems from "./assets/gmailItems.svg"
 function Packet() {
     return (
         <section className="packet-section">
@@ -142,6 +142,28 @@ function Packet() {
     )
 }
 
+import './Next.css'
+import bigEmail from './assets/bigEmail.svg'
+function Next() {
+    return (
+        <section className="next-section">
+            <div className="next-wrapper">
+                <div className="next-container">
+                    <div className='next-items'>
+                        <img src={bigEmail} alt="big email image" />
+                        <h2 className='next-title'>Вперед к успеху</h2>
+                        <p className='next-desc'>Воспользуйтесь всеми преимуществами Gmail!</p>
+                    </div>
+                    <div className='hero-buttons'>
+                        <Link to="/gmail/accountchooser" className='btn btn-primary'>Создать аккаунт</Link>
+                        <Link to="/gmail/work" className='btn btn-outline'>Для работы</Link>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
 export default function Menu() {
     return (
         <>
@@ -153,6 +175,7 @@ export default function Menu() {
             <Advantage />
             <RecommendCard />
             <Packet />
+            <Next />
         </>
     )
 }
