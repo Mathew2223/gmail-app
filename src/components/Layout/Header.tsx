@@ -1,6 +1,6 @@
 import './Header.css'
 import { Link, useNavigate } from 'react-router-dom'
-import headerLogo from './assets/gmail.png'
+import headerLogo from '../../assets/logos/gmail.png'
 
 export default function Header() {
     const navigate = useNavigate();
@@ -25,7 +25,7 @@ export default function Header() {
                     <nav className="header-nav" />
                     <div className="header-aside">
                         <Link to="/gmail/work">Для работы</Link>
-                        <Link to="/gmail/login">Войти</Link>
+                        <Link style={{ border: '1px solid #dadce0' }} to="/gmail/login">Войти</Link>
                         <Link to="/gmail/accountchooser">Создать аккаунт</Link>
                     </div>
                 </div>

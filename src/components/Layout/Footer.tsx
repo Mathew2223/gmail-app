@@ -1,11 +1,11 @@
 import './Footer.css'
-import x from './assets/footer_images/x.svg'
-import youtube from './assets/footer_images/youtube.svg'
-import linkedIn from './assets/footer_images/linkedIn.svg'
-import instagram from './assets/footer_images/instagram.svg'
-import facebook from './assets/footer_images/facebook.svg'
-import tiktok from './assets/footer_images/tiktok.svg'
-import Google from './assets/footer_images/Google.svg'
+import x from '../../assets/icons/x.svg'
+import youtube from '../../assets/icons/youtube.svg'
+import linkedIn from '../../assets/icons/linkedIn.svg'
+import instagram from '../../assets/icons/instagram.svg'
+import facebook from '../../assets/icons/facebook.svg'
+import tiktok from '../../assets/icons/tiktok.svg'
+import Google from '../../assets/icons/Google.svg'
 
 export default function Footer() {
     return (

@@ -1,11 +1,11 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './Login.tsx'
-import Work from './Work.tsx'
-import AccountChooser from './AccountChooser.tsx'
-import Layout from './Layout.tsx'
-import Menu from './Menu.tsx'
+import Login from './components/Pages/Login.tsx'
+import Work from './components/Pages/Work.tsx'
+import AccountChooser from './components/Pages/AccountChooser.tsx'
+import Layout from './components/Layout/Layout.tsx'
+import Menu from './components/Layout/Menu.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>

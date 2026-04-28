@@ -1,5 +1,5 @@
 .next-section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     background-color: #f8f9fa;
     display: flex;
     justify-content: center;
@@ -21,7 +21,8 @@
 .next-items {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
+    align-items: center;
 }
 
 .next-items img {
@@ -44,18 +45,17 @@
     color: #5f6368;
     margin: 0;
     font-weight: 300;
-    letter-spacing: 0.03em;
-    word-spacing: 0.05em;
+    letter-spacing: 0.01em;
 }
 
-.hero-buttons {
+.next-buttons {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.btn {
+.next-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -68,49 +68,49 @@
     font-size: 0.9375rem;
 }
 
-.btn-primary {
+.next-btn-primary {
     background-color: #1a73e8;
     color: white;
     border: none;
 }
 
-.btn-primary:hover {
+.next-btn-primary:hover {
     background-color: #1765cc;
     box-shadow: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
 }
 
-.btn-outline {
+.next-btn-outline {
     background-color: transparent;
     color: #1a73e8;
     border: 1px solid #dadce0;
 }
 
-.btn-outline:hover {
+.next-btn-outline:hover {
     background-color: #f1f3f4;
     border-color: #dadce0;
     color: #1765cc;
 }
 
 @media (max-width: 600px) {
-    .next-items h2 {
+    .next-title {
         font-size: 1.5rem;
     }
 
-    .next-items p {
+    .next-desc {
         font-size: 1rem;
     }
 
-    .btn {
+    .next-btn {
         padding: 10px 20px;
         font-size: 0.875rem;
     }
 
-    .hero-buttons {
+    .next-buttons {
         flex-direction: column;
         width: 100%;
     }
 
-    .btn {
+    .next-btn {
         width: 100%;
         max-width: 200px;
     }
