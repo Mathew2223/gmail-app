@@ -1,0 +1,194 @@
+.birthday-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+}
+
+.birthday-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 48px 40px 36px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+    .birthday-card {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.birthday-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.birthday-logo {
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.birthday-header h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #202124;
+    margin: 0 0 8px 0;
+}
+
+.birthday-header p {
+    font-size: 26px;
+    color: #202124;
+    margin: 0;
+}
+
+.date-fields {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-label {
+    font-size: 16px;
+    color: #5f6368;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.birthday-select {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 16px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+    color: #202124;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%235f6368%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    background-size: 10px auto;
+    transition: border-color 0.2s;
+}
+
+.birthday-select:focus {
+    border: 2px solid #1a73e8;
+    padding: 12px 14px;
+}
+
+.input-hint {
+    display: block;
+    font-size: 14px;
+    color: #5f6368;
+    margin-top: 8px;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    word-spacing: 0.1em;
+    margin-bottom: 32px;
+}
+
+.birthday-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.birthday-btn-primary {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.birthday-btn-primary:hover {
+    background-color: #1765cc;
+    box-shadow: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.link-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 24px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1765cc;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+}
+
+.link-secondary:hover {
+    background-color: rgba(26, 115, 232, 0.04);
+    box-shadow: 0 0 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.birthday-btn-full {
+    width: auto;
+}
+
+.birthday-footer {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer-link {
+    font-size: 14px;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #202124;
+}
+
+@media (max-width: 600px) {
+    .date-fields {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .birthday-actions {
+        flex-direction: column-reverse;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .birthday-btn-primary {
+        width: 100%;
+    }
+
+    .link-secondary {
+        text-align: center;
+        width: 100%;
+    }
+}

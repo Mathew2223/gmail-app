@@ -12,7 +12,7 @@ export default function Next() {
                         <p className='next-desc'>Воспользуйтесь всеми преимуществами Gmail!</p>
                     </div>
                     <div className='next-buttons'>
-                        <Link to="/gmail/accountchooser" className='next-btn next-btn-primary'>Создать аккаунт</Link>
+                        <Link to="/gmail/accountchooser/name" className='next-btn next-btn-primary'>Создать аккаунт</Link>
                         <Link to="/gmail/work" className='next-btn next-btn-outline'>Для работы</Link>
                     </div>
                 </div>

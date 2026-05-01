@@ -26,7 +26,7 @@ export default function Header() {
                     <div className="header-aside">
                         <Link to="/gmail/work">Для работы</Link>
                         <Link style={{ border: '1px solid #dadce0' }} to="/gmail/login">Войти</Link>
-                        <Link to="/gmail/accountchooser">Создать аккаунт</Link>
+                        <Link to="/gmail/accountchooser/name">Создать аккаунт</Link>
                     </div>
                 </div>
             </div>
