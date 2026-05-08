@@ -37,7 +37,7 @@ export default function Possible() {
                                 key={activeIndex}
                                 className={`possible-image ${hadLoadedOnce ? 'animate-on-change' : ''}`}
                                 src={possibleData[activeIndex].image}
-                                alt={`possible feature ${activeIndex + 1}`}
+                                alt={possibleData[activeIndex].title}
                             />
                         </div>
                     </div>
@@ -61,7 +61,9 @@ function PossibleItem({ title, desc, isActive, onToggle }: Props) {
             <div className="possible-bar" />
             <h3>{title}</h3>
             <div className="details-content">
-                <p>{desc}</p>
+                <div>
+                    <p>{desc}</p>
+                </div>
             </div>
         </div>
     )

@@ -37,7 +37,7 @@ export default function Help() {
                                 key={activeIndex}
                                 className={`help-image ${hadLoadedOnce ? 'animate-on-change' : ''}`}
                                 src={helpData[activeIndex].image}
-                                alt={`Help feature ${activeIndex + 1}`}
+                                alt={helpData[activeIndex].title}
                             />
                         </div>
                     </div>
@@ -61,7 +61,9 @@ function HelpItem({ title, desc, isActive, onToggle }: Props) {
             <div className="help-bar" />
             <h3>{title}</h3>
             <div className="details-content">
-                <p>{desc}</p>
+                <div>
+                    <p>{desc}</p>
+                </div>
             </div>
         </div>
     )

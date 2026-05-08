@@ -1,16 +1,16 @@
-.security-section {
+.business-section {
     padding: 80px 50px;
     background-color: #fff;
     display: flex;
     justify-content: center;
 }
 
-.security-wrapper {
+.business-wrapper {
     max-width: 1200px;
     width: 100%;
 }
 
-.security-title {
+.business-title {
     font-size: 2.5rem;
     line-height: 1.2;
     color: #202124;
@@ -19,26 +19,27 @@
     font-weight: 500;
 }
 
-.security-container {
+.business-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: start;
+    align-items: start; /* Важно: выравнивание по верху */
 }
 
-.security-text-list {
+.business-text-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 40px; /* Расстояние между пунктами аккордеона */
 }
 
-.security-item {
+.business-item {
     position: relative;
     padding-left: 24px;
     cursor: pointer;
 }
 
-.security-bar {
+/* Полоска: растет сверху вниз при открытии */
+.business-bar {
     position: absolute;
     left: 0;
     top: 0;
@@ -46,16 +47,16 @@
     width: 4px;
     background-color: #dadce0;
     border-radius: 2px;
-    height: 30px;
+    height: 30px; /* Начальная высота */
     transition: height 0.3s ease-out, background-color 0.3s ease;
 }
 
-.security-item.open .security-bar {
-    height: 100%;
+.business-item.open .business-bar {
+    height: 100%; /* Растет на всю высоту раскрытого пункта */
     background-color: #1a73e8;
 }
 
-.security-item h3 {
+.business-content h3 {
     font-size: 1.25rem;
     line-height: 1.4;
     color: #5f6368;
@@ -65,21 +66,22 @@
     transition: color 0.2s ease;
 }
 
-.security-item h3:hover {
+.business-content h3:hover {
     color: #3c4043;
 }
 
-.security-item.open h3 {
+.business-item.open .business-content h3 {
     color: #202124;
 }
 
+/* Механизм аккордеона */
 .details-content {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.3s ease-out;
 }
 
-.security-item.open .details-content {
+.business-item.open .details-content {
     grid-template-rows: 1fr;
 }
 
@@ -87,7 +89,7 @@
     overflow: hidden;
 }
 
-.security-item p {
+.business-content p {
     margin-top: 0;
     padding-top: 10px;
     margin-bottom: 0;
@@ -102,28 +104,40 @@
     word-spacing: 0.05em;
 }
 
-.security-item.open p {
+.business-item.open .business-content p {
     opacity: 1;
     transform: translateY(0);
 }
 
-.security-images {
+/* Правая часть: Картинка */
+.business-images {
     display: flex;
     justify-content: center;
     align-items: start;
+    
+    /* 👇 ВОТ ЭТО ДЕЛАЕТ ЭФФЕКТ КАК В GMAIL: Картинка стоит на месте при скролле/кликах */
+    position: sticky;
+    top: 120px; 
 }
 
-.image-card img {
+.image-card {
     width: 100%;
     max-width: 500px;
-    height: auto;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+}
+
+.business-image {
+    width: 100%;
+    height: auto;
+    display: block;
     opacity: 1;
     transform: translateY(0);
 }
 
-.security-image.animate-on-change {
+.business-image.animate-on-change {
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
@@ -139,16 +153,17 @@
 }
 
 @media (max-width: 900px) {
-    .security-container {
+    .business-container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
-    .security-images {
-        order: 2;
+    .business-images {
+        order: -1;
+        position: static; /* На мобильных убираем липкость */
     }
 
-    .security-title {
+    .business-title {
         font-size: 2rem;
         text-align: left;
     }

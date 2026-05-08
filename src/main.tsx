@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path='/gmail' element={<Layout />}>
           <Route index element={<Menu />} />
           <Route path='login' element={<Login />} />
-          <Route path='work' element={<Work />} />
+          <Route path='password' element={<Password />} />
           <Route path='accountchooser'>
             <Route path='name' element={<NameAccount />} />
             <Route path='birthday' element={<Birthday />} />
@@ -26,8 +26,8 @@ createRoot(document.getElementById('root')!).render(
             <Route path='password' element={<CreatePassword />} />
             <Route path='forgotpassword' element={<ForgotPassword />} />
           </Route>
-          <Route path='password' element={<Password />} />
         </Route>
+        <Route path='/gmail/work' element={<Work />} />
     </Routes>
   </BrowserRouter>
 )

@@ -1,23 +1,19 @@
 import './Header.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import headerLogo from '../../assets/logos/gmail.png'
 
 export default function Header() {
-    const navigate = useNavigate();
-
-    const handlePage = (e: React.MouseEvent) => {
-        e.preventDefault();
-        setTimeout(() => {
-            navigate('/gmail');
-        }, 100)
-    }
-
     return (
         <header>
             <div className="header">
                 <div className="header-content">
                     <div className="header-logos">
-                        <Link to="/gmail" onClick={handlePage} className="header-logo-gmail" aria-label="Открыть gmail страницу">
+                        <Link
+                            to="/gmail"
+                            className="header-logo-gmail"
+                            aria-label="Открыть gmail страницу"
+                            reloadDocument
+                        >
                             <img src={headerLogo} alt="header-logo" />
                             <span>Gmail</span>
                         </Link>

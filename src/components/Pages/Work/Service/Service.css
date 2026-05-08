@@ -1,12 +1,12 @@
-.hero {
-    padding: 40px 50px;
+.service {
+    padding: 60px 50px;
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero-container {
+.service-container {
     max-width: 1200px;
     width: 100%;
     display: grid;
@@ -15,15 +15,19 @@
     align-items: center;
 }
 
-.hero-text h1 {
-    font-size: 2.5rem;
+.service-title {
+    text-align: left;
+}
+
+.service-title h1 {
+    font-size: 44px;
     line-height: 1.2;
     color: #202124;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-.hero-text p {
+.service-title p {
     font-size: 1.125rem;
     color: #5f6368;
     line-height: 1.6;
@@ -33,12 +37,13 @@
     word-spacing: 0.05em;
 }
 
-.hero-buttons {
+.service-button {
     display: flex;
     gap: 16px;
+    justify-content: flex-start;
 }
 
-.btn-hero {
+.btn-service {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -50,57 +55,69 @@
     cursor: pointer;
 }
 
-.btn-primary-hero {
+.btn-primary-service {
     background-color: #1a73e8;
     color: white;
-    border: 100px;
 }
 
-.btn-primary-hero:hover {
+.btn-primary-service:hover {
     background-color: #1765cc;
     box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+    transform: translateY(-1px);
 }
 
-.btn-outline-hero {
-    background-color: transparent;
-    color: #1a73e8;
-    border: 1px solid trasparent;
+.image-wrapper {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
 }
 
-.btn-outline-hero:hover {
-    background-color: #f1f3f4;
-    border-color: #dadce0;
-}
-
-.hero-image img {
+.service-image {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    justify-self: end;
+    object-fit: cover;
 }
 
-@media (max-width: 900px) {
-    .hero-container {
+@media (max-width: 950px) {
+    .service {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .service-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 50px;
+        gap: 40px;
     }
 
-    .hero-text h1 {
-        font-size: 2rem;
+    .service-title {
+        text-align: center;
+        order: 2;
     }
 
-    .hero-text p {
+    .service-title h1 {
+        font-size: 38px;
+    }
+
+    .service-title p {
         margin-left: auto;
         margin-right: auto;
+        max-width: 500px;
     }
 
-    .hero-buttons {
+    .service-button {
         justify-content: center;
     }
 
-    .hero-image img {
+    .service-image {
+        order: 2;
         max-width: 100%;
-        margin: 0 auto;
+        justify-self: center;
     }
 }

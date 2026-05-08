@@ -14,7 +14,7 @@ export default function Packet() {
                             Единый центр для совместной работы, доступный на любом устройстве
                         </p>
                         <p className='packet-desc'>
-                        Google Workspace – это набор инновационных и гибких инструментов для продуктивной работы и эффективного взаимодействия, которые подойдут для компаний и личного использования. Он включает Gmail, Календарь, Диск, Документы, Meet и другие популярные приложения Google.
+                        Google Workspace – это набор инновационных и гибких инструментов для продуктивной работы и эффективного взаимодействия, которые подойдут для <a style={{ textDecoration: 'underline', color: '#1a73e8' }} href="https://workspace.google.com/intl/ru/solutions/business-email/">компаний</a> и личного использования. Он включает Gmail, Календарь, Диск, Документы, Meet и другие популярные приложения Google.
                         </p>
                         <a
                             href="https://workspace.google.com/intl/ru/?utm_source=gmailforwork&utm_medium=et&utm_campaign=body&utm_content=learnmore"

@@ -1,0 +1,174 @@
+.pricing-section {
+    padding: 100px 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-wrapper {
+    max-width: 1280px;
+    width: 100%;
+}
+
+.pricing-title {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: #202124;
+    text-align: center;
+    margin-bottom: 64px;
+    font-weight: 500;
+}
+
+.pricing-table-wrapper {
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 16px;
+}
+
+.pricing-table thead th {
+    padding: 48px 40px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dadce0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pricing-table thead tr th:last-child {
+    border: 1px solid #1a73e8;
+    border-bottom: none;
+}
+
+.plan-header h3 {
+    font-size: 2rem;
+    color: #202124;
+    margin: 0 0 24px 0;
+    font-weight: 500;
+}
+
+.plan-header.recommended-col {
+    background-color: rgba(26, 115, 232, 0.04);
+    border-left: 1px solid #dadce0;
+    position: relative;
+}
+
+.recommended-badge {
+    display: inline-block;
+    background-color: #d2e3fc;
+    color: #1a73e8;
+    padding: 6px 24px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.pricing-table td {
+    padding: 36px 40px;
+    border-top: 1px solid #dadce0;
+    color: #5f6368;
+    line-height: 1.6;
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.feature-name {
+    font-weight: 500;
+    color: #202124;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dadce0;
+    width: 30%;
+    font-size: 16px;
+}
+
+.business-option {
+    border: 1px solid #1a73e8;
+    border-bottom: none;
+}
+.last-row .business-option {
+    border-bottom: 1px solid #1a73e8;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.pricing-table a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.pricing-table a:hover {
+    color: #1765cc;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #dadce0;
+    color: #1a73e8;
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 12px;
+}
+
+.btn-outline:hover {
+    background-color: rgba(26, 115, 232, 0.04);
+    border-color: #1a73e8;
+}
+
+.btn-primary-price {
+    background-color: #1a73e8;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 12px;
+}
+
+.btn-primary-price:hover {
+    background-color: #1765cc;
+    box-shadow: 0 1px 2px rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+}
+
+.pricing-note {
+    padding: 28px 40px;
+    font-size: 18px;
+    color: #5f6368;
+    line-height: 1.6;
+    border-top: 1px solid #dadce0;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .pricing-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .pricing-title {
+        font-size: 2.25rem;
+        text-align: left;
+    }
+    
+    .pricing-table thead th,
+    .pricing-table td {
+        padding: 28px 24px;
+    }
+}

@@ -37,7 +37,7 @@ export default function Security() {
                                 key={activeIndex}
                                 className={`security-img ${hadLoadedOnce ? 'animate-on-change': ''}`}
                                 src={securityData[activeIndex].image}
-                                alt={`Security feature ${activeIndex + 1}`}
+                                alt={securityData[activeIndex].title}
                             />
                         </div>
                     </div>
@@ -61,7 +61,9 @@ function SecurityItem({ title, desc, isActive, onToggle }: Props)  {
             <div className="security-bar" />
             <h3>{title}</h3>
             <div className="details-content">
-                <p>{desc}</p>
+                <div>
+                    <p>{desc}</p>
+                </div>
             </div>
         </div>
     )

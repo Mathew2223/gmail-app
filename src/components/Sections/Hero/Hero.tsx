@@ -10,8 +10,8 @@ export default function Hero() {
                     <h1>Почта с умными функциями, надежной защитой и понятным интерфейсом</h1>
                     <p>Успевайте больше с Gmail благодаря Google Chat, Google Meet и другим встроенным инструментам для эффективного общения.</p>
                     <div className='hero-buttons'>
-                        <Link to="/gmail/accountchooser/name" className='hero-btn hero-btn-primary'>Создать аккаунт</Link>
-                        <Link to="/gmail/work" className='hero-btn hero-btn-outline'>Для работы</Link>
+                        <Link to="/gmail/accountchooser/name" className='btn-hero btn-primary-hero'>Создать аккаунт</Link>
+                        <Link to="/gmail/work" className='btn-hero btn-outline-hero'>Для работы</Link>
                     </div>
                 </div>
                 <div className='hero-image'>
