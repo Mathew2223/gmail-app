@@ -13,7 +13,7 @@ export default function NameAccount() {
         e.preventDefault();
         if (name.trim()) {
             localStorage.setItem('name_temp_name', name);
-            navigate('/gmail/accountchooser/birthday');
+            navigate('/gmail/login/birthday');
         }
     }
 
@@ -36,7 +36,7 @@ export default function NameAccount() {
                                 required
                             />
                         </div>
-                        <div className="input-group">              
+                        <div className="input-group">
                             <input
                                 type="text"
                                 className="account-input"

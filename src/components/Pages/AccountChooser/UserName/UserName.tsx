@@ -16,7 +16,7 @@ export default function UserName() {
                 finalUsername = `${username}@gmail.com`
             }
             localStorage.setItem('username_temp_username', finalUsername);
-            navigate('/gmail/accountchooser/password');
+            navigate('/gmail/login/password');
         }
     }
 

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './Pricing.css'
 
 export default function Pricing() {
@@ -55,8 +54,8 @@ export default function Pricing() {
                             </tr>
                             <tr className='last-row'>
                                 <td className="feature-name">Gemini в Gmail (генеративный ИИ)</td>
-                                <td>Доступно в тарифах <Link to="/gmail/login">Google AI Pro</Link> и <Link to="/gmail/login">Ultra</Link> для личного пользования</td>
-                                <td className='business-option'>Доступно в текущем тарифе <Link to="/gmail/login">Workspace</Link></td>
+                                <td>Доступно в тарифах <a href="https://workspace.google.com/intl/ru/products/gmail/?from=gafb-gmail-globalnav-ru#security:~:text=Google%20AI%20Pro%20%D0%B8%20Ultra" target='_blank'>Google AI Pro</a> и <a href="https://workspace.google.com/intl/ru/products/gmail/?from=gafb-gmail-globalnav-ru#security:~:text=Google%20AI%20Pro%20%D0%B8%20Ultra" target='_blank'>Ultra</a> для личного пользования</td>
+                                <td className='business-option'>Доступно в текущем тарифе <a href="https://workspace.google.com/intl/ru/products/gmail/?from=gafb-gmail-globalnav-ru#security:~:text=%D0%B2%20%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%BC%20%D1%82%D0%B0%D1%80%D0%B8%D1%84%D0%B5-,Workspace,-*%20%D0%92%20Google%20Workspace" target='_blank'>Workspace</a></td>
                             </tr>
                         </tbody>
                     </table>

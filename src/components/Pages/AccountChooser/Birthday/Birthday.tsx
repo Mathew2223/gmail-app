@@ -17,7 +17,7 @@ export default function Birthday() {
         if (day && month && year && gender) {
             localStorage.setItem('account_birthday', JSON.stringify({ day, month, year }));
             localStorage.setItem('account_gender', gender)
-            navigate('/gmail/accountchooser/username');
+            navigate('/gmail/login/username');
         } else {
             console.log('Пожалуйста, заполните все поля!')
         }

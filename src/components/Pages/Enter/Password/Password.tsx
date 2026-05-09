@@ -60,7 +60,7 @@ export default function Password() {
                         <label htmlFor="show-password">Показать пароль</label>
                     </div>
                     <div className="passlog-actions">
-                        <Link className="link-secondary" to="/gmail/accountchooser/forgotpassword">Забыли пароль?</Link>
+                        <Link className="link-secondary" to="/gmail/login/forgotpassword">Забыли пароль?</Link>
                         <button type="submit" className="btn-primary btn-full">Войти</button>
                     </div>
                 </form>

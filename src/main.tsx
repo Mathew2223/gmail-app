@@ -11,23 +11,26 @@ import Birthday from './components/Pages/AccountChooser/Birthday/Birthday.tsx'
 import UserName from './components/Pages/AccountChooser/UserName/UserName.tsx'
 import CreatePassword from './components/Pages/AccountChooser/CreatePassword/CreatePassword.tsx'
 import ForgotPassword from './components/Pages/Enter/ForgotPassword/ForgotPassword.tsx'
+import ErrorPage from './components/Layout/ErrorPage/ErrorPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <Routes>
-        <Route path='/gmail' element={<Layout />}>
+      <Route path='/gmail' errorElement={<ErrorPage />}>
+        <Route element={<Layout />}>
           <Route index element={<Menu />} />
           <Route path='login' element={<Login />} />
-          <Route path='password' element={<Password />} />
-          <Route path='accountchooser'>
+          <Route path='login'>
             <Route path='name' element={<NameAccount />} />
             <Route path='birthday' element={<Birthday />} />
             <Route path='username' element={<UserName />} />
             <Route path='password' element={<CreatePassword />} />
             <Route path='forgotpassword' element={<ForgotPassword />} />
           </Route>
+          <Route path='password' element={<Password />} />
         </Route>
-        <Route path='/gmail/work' element={<Work />} />
+        <Route path='work' element={<Work />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 )
