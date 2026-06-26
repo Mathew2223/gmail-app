@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import gmailLogo from '../../../../assets/logos/gmail.png'
 import './CreatePassword.css'
 import { useState } from "react";
@@ -79,7 +79,7 @@ export default function CreatePassword() {
                         <label htmlFor="show-pass">Показать пароль</label>
                     </div>
                     <div className="password-actions">
-                        <button type="submit" className="btn-primary btn-full">Далее</button>
+                        <Link to="/login" className="btn-primary btn-full">Далее</Link>
                     </div>
                 </form>
                 <AuthFooter />

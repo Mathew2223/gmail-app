@@ -4,7 +4,7 @@ export default function Pricing() {
 
     const handleNavigate = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        window.location.href = "/gmail/login";
+        window.location.href = "login";
     }
 
     return (

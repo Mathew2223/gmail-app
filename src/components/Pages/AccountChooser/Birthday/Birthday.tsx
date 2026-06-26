@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import gmailLogo from '../../../../assets/logos/gmail.png'
 import './Birthday.css'
 import { useState } from "react";
-import { days, months, years, genders } from './Birthday.ts'
+import { days, months, years, genders } from './birthdayData'
 import AuthFooter from '../../AuthFooter/AuthFooter'
 
 export default function Birthday() {
@@ -17,7 +17,7 @@ export default function Birthday() {
         if (day && month && year && gender) {
             localStorage.setItem('account_birthday', JSON.stringify({ day, month, year }));
             localStorage.setItem('account_gender', gender)
-            navigate('/gmail/login/username');
+            navigate('/login/username');
         } else {
             console.log('Пожалуйста, заполните все поля!')
         }
@@ -93,8 +93,8 @@ export default function Birthday() {
                         Эта информация не будет отображаться в вашем аккаунте. Используйте дату своего рождения.
                     </span>
                     <div className="birthday-actions">
-                        <Link to="/gmail/login" className="link-secondary">Уже есть аккаунт</Link>
-                        <button type="submit" className="birthday-btn-primary birthday-btn-full">Далее</button>
+                        <Link to="/login" className="link-secondary">Уже есть аккаунт</Link>
+                        <Link to="/login/createpassword" className="birthday-btn-primary birthday-btn-full">Далее</Link>
                     </div>
                 </form>
                 <AuthFooter />

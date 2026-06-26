@@ -11,7 +11,7 @@ export default function Trust() {
                         <h2 className='trust-title'>Gmail доверяют миллиарды пользователей</h2>
                     </div>
                     <div className='trust-buttons'>
-                        <Link to="/gmail/login" className='trust-btn next-btn-primary'>Начать здесь</Link>
+                        <Link to="/login" className='trust-btn next-btn-primary'>Начать здесь</Link>
                     </div>
                 </div>
             </div>

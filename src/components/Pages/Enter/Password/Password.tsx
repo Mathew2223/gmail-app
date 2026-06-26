@@ -13,7 +13,7 @@ export default function Password() {
     useEffect(() => {
         const email = localStorage.getItem('gmail_temp_email');
         if (!email) {
-            navigate('/gmail/login');
+            navigate('/login');  // ✅ Исправлено: на главную входа
         } else {
             setSavedEmail(email)
         }
@@ -23,7 +23,7 @@ export default function Password() {
         e.preventDefault()
         if (password.trim()) {
             localStorage.removeItem('gmail_temp_email');
-            navigate('/gmail');
+            navigate('/work');  // ✅ Исправлено: куда нужно после входа (на работу/почту)
         }
     }
     if (!savedEmail) return null;
@@ -35,7 +35,7 @@ export default function Password() {
                     <img src={gmailLogo} alt="Gmail logo" className="passlog-logo" />
                     <h1>Вход</h1>
                     <p>{savedEmail}</p>
-                    <Link to="/gmail/login" className="change-account-link">Это не вы?</Link>
+                    <Link to="/login" className="change-account-link">Это не вы?</Link>  {/* ✅ Исправлено */}
                 </div>
                 <form action="" className="passlog-form" onSubmit={handleLogin}>
                     <div>
@@ -60,7 +60,7 @@ export default function Password() {
                         <label htmlFor="show-password">Показать пароль</label>
                     </div>
                     <div className="passlog-actions">
-                        <Link className="link-secondary" to="/gmail/login/forgotpassword">Забыли пароль?</Link>
+                        <Link className="link-secondary" to="/login/forgotpassword">Забыли пароль?</Link>
                         <button type="submit" className="btn-primary btn-full">Войти</button>
                     </div>
                 </form>

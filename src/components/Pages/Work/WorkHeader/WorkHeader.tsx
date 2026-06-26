@@ -8,7 +8,7 @@ export default function WorkHeader() {
             <div className="header">
                 <div className="header-content">
                     <div className="header-logos">
-                        <Link to="/gmail" className="header-logo-gmail" aria-label="Открыть gmail страницу">
+                        <Link to="/" className="header-logo-gmail" aria-label="Открыть gmail страницу">
                             <img src={headerLogo} alt="header-logo" />
                             <span>Gmail</span>
                         </Link>

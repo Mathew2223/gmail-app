@@ -48,8 +48,8 @@ export default function NameAccount() {
                     </div>
                     <span className="input-hint">Это не компьютер? Используйте гостевой режим чтобы войти конфиденциально</span>
                     <div className="account-actions">
-                        <Link to="/gmail/login" className="link-secondary">Уже есть аккаунт</Link>
-                        <button type="submit" className="name-btn-primary name-btn-full">Далее</button>
+                        <Link to="/login" className="link-secondary">Уже есть аккаунт</Link>
+                        <Link to="/login/birthday" className="name-btn-primary name-btn-full">Далее</Link>
                     </div>
                 </form>
                 <AuthFooter />

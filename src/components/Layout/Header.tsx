@@ -9,10 +9,9 @@ export default function Header() {
                 <div className="header-content">
                     <div className="header-logos">
                         <Link
-                            to="/gmail"
+                            to="" 
                             className="header-logo-gmail"
                             aria-label="Открыть gmail страницу"
-                            reloadDocument
                         >
                             <img src={headerLogo} alt="header-logo" />
                             <span>Gmail</span>
@@ -20,9 +19,9 @@ export default function Header() {
                     </div>
                     <nav className="header-nav" />
                     <div className="header-aside">
-                        <Link to="/gmail/work">Для работы</Link>
-                        <Link style={{ border: '1px solid #dadce0' }} to="/gmail/login">Войти</Link>
-                        <Link to="/gmail/login/name">Создать аккаунт</Link>
+                        <Link to="work">Для работы</Link>
+                        <Link style={{ border: '1px solid #dadce0' }} to="/login">Войти</Link>
+                        <Link to="login/name">Создать аккаунт</Link>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ export default function Login() {
                 finalEmail = `${email}@gmail.com`
             }
             localStorage.setItem('gmail_temp_email', finalEmail);
-            navigate('/gmail/password');
+            navigate('/password');
         }
     }
 
@@ -46,7 +46,7 @@ export default function Login() {
                         <span className="input-hint">Это не компьютер? Используйте гостевой режим, чтобы войти конфиденциально.</span>
                     </div>
                     <div className="login-actions">
-                        <Link to="/gmail/login/name" className="link-secondary">Создать аккаунт</Link>
+                        <Link to="/login/name" className="link-secondary">Создать аккаунт</Link>
                         <button type="submit" className="btn-primary btn-full">Далее</button>
                     </div>
                 </form>
