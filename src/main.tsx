@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Navigate } from 'react-router-dom';
 
 import Login from './components/Pages/Enter/Login/Login'
 import Work from './components/Pages/Work/Work'
@@ -28,6 +29,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="password" element={<Password />} />
         <Route path="work" element={<Work />} />
       </Route>
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   </BrowserRouter>
 )
