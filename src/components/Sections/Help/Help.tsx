@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Help.css'
-import { helpData } from './helpData.js';
+import { helpData } from './helpData.ts';
 
 export default function Help() {
     const [activeIndex, setActiveIndex] = useState<number>(0);

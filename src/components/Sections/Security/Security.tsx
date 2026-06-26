@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Security.css'
-import { securityData } from './securityData.js';
+import { securityData } from './securityData.ts';
 
 export default function Security() {
     const [activeIndex, setActiveIndex] = useState<number>(0);

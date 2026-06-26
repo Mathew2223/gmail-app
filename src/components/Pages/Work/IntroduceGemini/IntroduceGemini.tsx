@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
-import { geminiData } from './geminiData';
+import { geminiData } from './geminiData.ts';
 import './IntroduceGemini.css';
+
+export interface ItemData {
+    title: string;
+    desc: string;
+}
 
 export default function IntroduceGemini() {
     const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -21,7 +26,7 @@ export default function IntroduceGemini() {
                     <h2 className="geminiIntro-title">Больше возможностей в приложении Gmail</h2>
                     <div className="geminiIntro-container">
                         <div className="geminiIntro-text-list">
-                            {geminiData.map((item, index) => (
+                            {geminiData.map((item: ItemData, index: number) => (
                                 <GeminiItem
                                     key={index}
                                     index={index}

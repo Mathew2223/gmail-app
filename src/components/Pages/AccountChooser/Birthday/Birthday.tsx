@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import gmailLogo from '../../../../assets/logos/gmail.png'
 import './Birthday.css'
 import { useState } from "react";
-import { days, months, years, genders } from './Birthday'
+import { days, months, years, genders } from './Birthday.ts'
 import AuthFooter from '../../AuthFooter/AuthFooter'
 
 export default function Birthday() {

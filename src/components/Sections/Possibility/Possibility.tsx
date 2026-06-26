@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Possible.css'
-import { possibleData } from './possibleData.js';
+import { possibleData } from './possibleData.ts';
 
 export default function Possible() {
     const [activeIndex, setActiveIndex] = useState<number>(0);

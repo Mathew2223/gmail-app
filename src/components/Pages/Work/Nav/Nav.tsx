@@ -3,7 +3,7 @@ import './Nav.css'
 
 export default function Nav() {
     const location = useLocation();
-    const isActive = (hash) => location.hash === hash;
+    const isActive = (hash: string) => location.hash === hash;
 
     return (
         <section className="nav-menu">

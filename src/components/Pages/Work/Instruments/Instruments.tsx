@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
-import { instrumentsData } from './instrumentsData.js';
+import { instrumentsData } from './instrumentsData.ts';
 import { type Props } from '../IntroduceGemini/IntroduceGemini'
 import './Instruments.css'
+
+export interface ItemData {
+    title: string;
+    desc: string;
+}
 
 export default function Instruments() {
     const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -22,7 +27,7 @@ export default function Instruments() {
                     <h2 className="business-title">Больше возможностей в приложении Gmail</h2>
                     <div className="business-container">
                         <div className="business-text-list">
-                            {instrumentsData.map((item, index) => (
+                            {instrumentsData.map((item: ItemData, index: number) => (
                                 <InstrumentsItem
                                     key={index}
                                     index={index}
