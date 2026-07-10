@@ -1,4 +1,3 @@
-import Footer from "../../Layout/Footer";
 import Instruments from "./Instruments/Instruments";
 import IntroduceGemini from "./IntroduceGemini/IntroduceGemini";
 import Nav from "./Nav/Nav";
@@ -21,7 +20,6 @@ export default function Work() {
                 <Pricing />
                 <Trust />
             </main>
-            <Footer />
         </>
     )
 }
